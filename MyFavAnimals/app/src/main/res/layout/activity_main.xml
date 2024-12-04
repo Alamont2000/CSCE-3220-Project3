@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/mytoolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/foxbutton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#00FF9122"
+        android:onClick="foxButton"
+        android:scaleType="fitXY"
+        android:tint="#5EFF9122"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/foxstencil" />
+
+    <ImageButton
+        android:id="@+id/manedbutton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#00FF9122"
+        android:onClick="manedButton"
+        android:scaleType="fitXY"
+        android:tint="#5EFF6422"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/manedwolfstencil" />
+
+    <ImageButton
+        android:id="@+id/possbutton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#00FF9122"
+        android:onClick="possButton"
+        android:scaleType="fitXY"
+        android:tint="#2AFF22ED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/opossumstencil" />
+
+    <ImageView
+        android:id="@+id/currentanimal"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="128dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stonedfox" />
+</androidx.constraintlayout.widget.ConstraintLayout>
